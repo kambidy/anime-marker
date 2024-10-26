@@ -27,7 +27,7 @@ export default function Home() {
         {animeList.map((anime) => (
           <div key={anime.mal_id} className="border rounded shadow p-2">
 		<Link href={`/animeInfo/${anime.mal_id}`}>
-            		<Card imageUrl= {anime.images.jpg.large_image_url} description = {anime.title} id = {anime.mal_id}/>
+            		<Card imageUrl= {anime.images.jpg.large_image_url} description = {anime.title} episodes = {anime.episodes}/>
           	</Link>
 		</div>
         ))}
