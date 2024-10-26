@@ -24,7 +24,7 @@ const Navbar = () => {
           href={"/"}
           className="text-1xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-secondary-600 font-semibold"
         >
-          Anime-MArker
+          Anime-Marker
         </Link>
 	  
      </div>
