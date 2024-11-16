@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import React from 'react';
-
+import Navbar from '../../components/Navbar.jsx'
 const AnimeDetails = ( {params} ) => {
 	const { id } = React.use(params)
   const [anime, setAnime] = useState(null);
@@ -26,6 +26,7 @@ const AnimeDetails = ( {params} ) => {
 
   return (
     <div className="container mx-auto p-4">
+      <Navbar/>
       <h1 className="text-3xl font-bold mb-2">{anime.title}</h1>
       <img src={anime.images.jpg.large_image_url} alt={anime.title} className="w-full max-w-md rounded" />
       <p className="text-gray-700 mt-4">{anime.synopsis}</p>
