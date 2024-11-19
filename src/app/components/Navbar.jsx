@@ -35,13 +35,14 @@ const Navbar = () => {
         >
           Anime-Marker
         </Link>
-    <form>
-      <input
+    <div className = "flex p-4 md:p-0 md:flex-row  mt-0">
+      <form>
+          <input
         type="text"
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
         placeholder="Enter search term"
-             className="px-6 inline-block py-3   rounded-full mr-4 bg-gradient-to-br  hover:bg-slate-200 text-white"
+             className="px-6 inline-block py-3  rounded-full mr-4 sky-400 bg-gradient-to-br  hover:bg-slate-200 text-black"
 
       />
           <Link href={`/animeSearch/${inputValue}`}>
@@ -49,6 +50,7 @@ const Navbar = () => {
       <button type="submit"  className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-sky-500 to-secondary-500 hover:bg-slate-200 text-white">Search</button>
           </Link>
     </form>
+    </div>
      </div>
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
     </nav>
